@@ -16,15 +16,4 @@ class MailInfoTest {
         code = MailCode.HAPPY_BIRTHDAY;
         info = new MailInfo(client, code);
     }
-
-    @org.junit.jupiter.api.Test
-    void getText() {
-        assertEquals("HI Arman!\nHappy Birthday!", info.getText());
-    }
-
-    @org.junit.jupiter.api.Test
-    void getEmail() {
-        assertEquals(client.getEmail(), info.getEmail());
-    }
-
 }
